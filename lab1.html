@@ -1,0 +1,29 @@
+<body>
+ <div id = "container" tabindex = "0" class = "blockquote text-nowrap"
+ </div>
+<script>  
+ var container = document.getElementById('container');
+window.onload = function() {
+    add_new_chars();
+}
+<script>
+window.addEventListener("keyup", function(e) {
+    console.log(e.key);
+    if (e.key == container.textContent) {
+      let str = container.substring(1);
+      console.log(str + result);
+    }
+    add_new_chars();
+});
+
+function add_new_chars () {
+  // var letters = ["a","b","c","d","e","f","g","h","i","j","k","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  var result = [];
+  var n = 3;
+  for (var i = 0; i < n; i++) {
+    var ranNum = Math.ceil(Math.random() * 25);
+    var result = String.fromCharCode(65 + ranNum);
+  }
+};
+</script>
+</body>
