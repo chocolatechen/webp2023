@@ -46,7 +46,6 @@
             if (this.readyState == 4 && this.status == 200) {
                 var dataset = JSON.parse(this.responseText);
                 add_new_img(dataset);
-                console.log(dataset);
             }
         };
     }
